@@ -1,8 +1,7 @@
 # PyBer_Analysis
 
 ## The Purpose of the Project
-The purpose of the new analysis is well defined. (3 pt)
-The company V. Isualize has given me the assignment of creating a summary DataFrame for ride-sharing statistics by city-type (Urban, Suburban, Rural). I began this analysis by first getting the necessary files, (city_data.csv)[] and (ride_data.csv)[], merging them so that all the data was in a single data frame, and grouping the rows by their "type" so that new data frames could be created. I created new data columns using these codes:
+The company V. Isualize has given me the assignment of creating a summary DataFrame for ride-sharing statistics by city-type (Urban, Suburban, Rural). I began this analysis by first getting the necessary files, (city_data.csv)[https://github.com/bazinga183/PyBer_Analysis/blob/main/Resources/city_data.csv] and (ride_data.csv)[https://github.com/bazinga183/PyBer_Analysis/blob/main/Resources/ride_data.csv], merging them so that all the data was in a single data frame, and grouping the rows by their "type" so that new data frames could be created. I created new data columns using these codes:
  
 ```
 total_rides_by_city = pyber_data_df.groupby(["type"]).count()["ride_id"]
